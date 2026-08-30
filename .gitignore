@@ -59,8 +59,11 @@ Thumbs.db
 /scraping/data/
 /search.json
 
-# --- Notes perso, pas d'intérêt pour le repo public ---
-/docs/
+# --- Notes perso : seuls ARCHITECTURE/DECISIONS/REGLAGES sont publics ---
+docs/*
+!docs/ARCHITECTURE.md
+!docs/DECISIONS.md
+!docs/REGLAGES.md
 
 # --- Divers ---
 *.local
