@@ -1,0 +1,66 @@
+# --- Environnement / secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+
+# Poetry / venv
+.venv/
+venv/
+env/
+ENV/
+
+# Outils de test / lint / type-check
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# --- Node / frontend ---
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Éditeurs / OS ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.sw?
+
+# --- Données (déposées au moment du déploiement, pas en repo) ---
+/data/
+/scraping/data/
+/search.json
+
+# --- Notes perso, pas d'intérêt pour le repo public ---
+/docs/
+
+# --- Divers ---
+*.local
