@@ -1,0 +1,219 @@
+[
+  {
+    "id": "simple-01",
+    "category": "lore_simple",
+    "question": "Qui est Garen et à quel groupe demacien appartient-il ?",
+    "expected": "Guerrier du Détachement hardi, héritier de la famille Crownguard (chargée de défendre Demacia), équipé d'une armure résistante à la magie."
+  },
+  {
+    "id": "simple-02",
+    "category": "lore_simple",
+    "question": "Quelle est l'arme d'Aphelios et qui la lui fournit ?",
+    "expected": "Des armes en pierre de lune ; elles lui sont fournies par sa sœur Alune, qui le guide depuis son temple lointain."
+  },
+  {
+    "id": "simple-03",
+    "category": "lore_simple",
+    "question": "Pourquoi Lux a-t-elle grandi dans la crainte à Demacia ?",
+    "expected": "Demacia est un royaume isolationniste où la magie inspire peur et méfiance ; Lux, capable de plier la lumière, craignait d'être exilée et a dû dissimuler son pouvoir."
+  },
+  {
+    "id": "simple-04",
+    "category": "lore_simple",
+    "question": "Comment Viktor est-il devenu le \"Héraut de l'arcane\" ?",
+    "expected": "Il est passé d'un humain maladif à un être entièrement biomécanique, sacrifiant sa propre humanité, convaincu qu'éliminer ses émotions éliminerait ses souffrances."
+  },
+  {
+    "id": "simple-05",
+    "category": "lore_simple",
+    "question": "D'où vient Jinx et où sème-t-elle le chaos ?",
+    "expected": "Elle vient de la basse-ville (bas-fonds) ; elle sème le chaos aussi bien à Piltover qu'à Zaun."
+  },
+  {
+    "id": "simple-06",
+    "category": "lore_simple",
+    "question": "Qui est Thresh et d'où vient-il ?",
+    "expected": "Un spectre sadique et rusé des Îles obscures, autrefois gardien de secrets des arcanes avant d'être terrassé par un pouvoir plus grand que la vie ou la mort."
+  },
+  {
+    "id": "simple-07",
+    "category": "lore_simple",
+    "question": "Que cherche à rassembler Ryze ?",
+    "expected": "Les Runes telluriques, des fragments de magie brute."
+  },
+  {
+    "id": "simple-08",
+    "category": "lore_simple",
+    "question": "Quel est le titre de Darius et que fait-il pour Noxus ?",
+    "expected": "\"Main de Noxus\", commandant le plus craint et le plus endurci de la nation, il pourfend les ennemis de l'empire."
+  },
+  {
+    "id": "simple-09",
+    "category": "lore_simple",
+    "question": "Que sont Nasus et Renekton, et d'où viennent-ils ?",
+    "expected": "Des Transfigurés (Nasus à tête de chacal, Renekton à tête de crocodile), tous deux originaires de l'empire déchu de Shurima."
+  },
+  {
+    "id": "simple-10",
+    "category": "lore_simple",
+    "question": "Qu'est-il arrivé à la main de Swain ?",
+    "expected": "Il a perdu sa main au combat pendant les guerres ioniennes ; elle a été remplacée par une nouvelle main démoniaque."
+  },
+  {
+    "id": "ambigu-01",
+    "category": "lore_ambigu",
+    "question": "Que s'est-il passé entre Yasuo et Yone ?",
+    "expected": "Yasuo, accusé à tort d'avoir assassiné son maître, a été contraint de tuer son propre demi-frère Yone en légitime défense en fuyant. Yone, tué par Yasuo, s'est ensuite retrouvé hanté par une entité malveillante dans le royaume spirituel, qu'il a dû tuer avec sa propre épée ; il porte désormais le masque de l'azakana et chasse ces créatures démoniaques.",
+    "notes": "Fait central réparti sur DEUX documents distincts (Yasuo.json et Yone.json). Vérifier que le bot combine les deux sources, cite les deux, et ne réduit pas Yasuo à un simple \"meurtrier\" sans mentionner la légitime défense et l'erreur judiciaire initiale."
+  },
+  {
+    "id": "ambigu-02",
+    "category": "lore_ambigu",
+    "question": "Kayn a-t-il pris le contrôle de Rhaast, ou l'inverse ?",
+    "expected": "La bio de base ne tranche pas : Kayn manie Rhaast \"sans jamais craindre la corruption\", ce qui suggère une issue non encore déterminée. Le bot doit rester prudent, ne pas inventer une issue définitive (victoire de Kayn ou de Rhaast) si elle n'est pas dans le contexte fourni.",
+    "notes": "Cas où une mauvaise réponse consisterait à trancher avec assurance une issue qui n'est pas donnée dans le passage récupéré."
+  },
+  {
+    "id": "ambigu-03",
+    "category": "lore_ambigu",
+    "question": "Zed est-il un traître à Ionia ou son protecteur ?",
+    "expected": "Ambivalent : il a fondé l'Ordre de l'ombre pour défendre Ionia contre les envahisseurs noxiens, mais a eu recours à la Forme secrète de l'ombre, un esprit maléfique et corrompu — sa légitimité de protecteur est donc entachée.",
+    "notes": "Vérifier que le bot restitue la nuance plutôt qu'un jugement tranché (\"héros\" ou \"méchant\")."
+  },
+  {
+    "id": "ambigu-04",
+    "category": "lore_ambigu",
+    "question": "Sett est-il un criminel ou un héros populaire ?",
+    "expected": "Les deux à la fois : chef du monde criminel d'Ionia, mais parti de rien dans les arènes de combat de Navori et respecté pour sa force et sa capacité à encaisser les coups — ambiguïté morale assumée par la bio elle-même."
+  },
+  {
+    "id": "ambigu-05",
+    "category": "lore_ambigu",
+    "question": "Viktor cherche-t-il à sauver ou à détruire l'humanité ?",
+    "expected": "Les deux perspectives coexistent : il se voit comme un messie apportant la \"glorieuse évolution\" pour éliminer la souffrance, mais l'a fait en sacrifiant sa propre humanité — le bot ne doit pas trancher pour lui donner un rôle uniquement héroïque ou uniquement antagoniste."
+  },
+  {
+    "id": "ambigu-06",
+    "category": "lore_ambigu",
+    "question": "Illaoi agit-elle au nom de la vérité ou par cruauté ?",
+    "expected": "Prêtresse sincère du Grand Kraken (\"Apôtre de la vérité de Nagakabouros\"), mais ses méthodes consistent à arracher les esprits de ses ennemis et briser leur perception de la réalité — la bio ne présente pas cela comme un acte de pure cruauté gratuite, nuance à préserver."
+  },
+  {
+    "id": "ambigu-07",
+    "category": "lore_ambigu",
+    "question": "La prise de pouvoir de Swain à Noxus est-elle légitime ?",
+    "expected": "Non tranché dans la bio : il était \"déchu et blessé\" avant de prendre le contrôle \"avec une féroce détermination\" — la légitimité de cette prise de pouvoir n'est pas affirmée explicitement, le bot ne doit pas l'ériger en fait établi."
+  },
+  {
+    "id": "ambigu-08",
+    "category": "lore_ambigu",
+    "question": "Que sait-on de la vie de Thresh avant qu'il ne devienne un spectre ?",
+    "expected": "Très peu : la bio dit seulement qu'il était \"autrefois le gardien d'innombrables secrets des arcanes\". Le bot doit reconnaître l'information limitée plutôt que d'inventer un passé détaillé (personnalité, apparence, contexte historique précis)."
+  },
+  {
+    "id": "agrege-01",
+    "category": "questions_agregees",
+    "question": "Combien de champions sont référencés dans les archives ?",
+    "expected": "Un nombre proche de 173 (valeur de référence au moment de la rédaction de ce test — à ajuster si le corpus a évolué). Doit venir du chunk d'index dédié, pas d'une estimation du LLM.",
+    "notes": "Dépend du chunk 'internal://index/champions' généré par build_index_chunk.py — vérifie qu'il remonte bien dans le top-k."
+  },
+  {
+    "id": "agrege-02",
+    "category": "questions_agregees",
+    "question": "Combien de régions de Runeterra sont répertoriées dans les archives ?",
+    "expected": "13 régions.",
+    "notes": "Dépend du chunk 'internal://index/regions'. 13 confirmé par le nombre de fichiers dans data/raw/universe_regions/."
+  },
+  {
+    "id": "agrege-03",
+    "category": "questions_agregees",
+    "question": "Liste les régions de Runeterra présentes dans les archives.",
+    "expected": "Bandle City, Bilgewater, Demacia, Freljord, Ionia, Ixtal, Mont Targon, Noxus, Piltover, Shurima, Îles obscures, Zaun, et Le Néant (13 au total)."
+  },
+  {
+    "id": "agrege-04",
+    "category": "questions_agregees",
+    "question": "Quels champions sont associés à Ionia dans les archives ?",
+    "expected": "Doit lister des champions ioniens correctement tagués en base (attendus notamment parmi : Ahri, Akali, Karma, Kayn, Sett, Shen, Zed). La liste précise dépend du métadonnées 'regions' réellement indexée par chunk — à confirmer au premier run plutôt qu'à prendre pour acquis.",
+    "notes": "Teste le filtrage par métadonnées région, pas juste la liste globale de l'index champions."
+  },
+  {
+    "id": "agrege-05",
+    "category": "questions_agregees",
+    "question": "Quels champions sont associés à Noxus dans les archives ?",
+    "expected": "Doit inclure au moins Darius et Swain, correctement tagués région=Noxus."
+  },
+  {
+    "id": "agrege-06",
+    "category": "questions_agregees",
+    "question": "Quels champions des archives ont le tag \"Tank\" ?",
+    "expected": "Incertain : les chunks d'index actuels (build_index_chunk.py) ne couvrent que les régions et les champions, pas les tags de rôle. Ce test sert à vérifier si le bot répond honnêtement qu'il ne peut pas produire une liste exhaustive fiable, plutôt que d'inventer une liste incomplète en la présentant comme complète.",
+    "notes": "Limite connue du système à ce jour — résultat attendu : un aveu d'incomplétude, pas un refus pur ni une fausse liste exhaustive."
+  },
+  {
+    "id": "agrege-07",
+    "category": "questions_agregees",
+    "question": "Combien de champions ont le tag \"Assassin\" dans les archives ?",
+    "expected": "Même limite que agrege-06 : aucun chunk d'index ne calcule ce décompte. Le bot ne doit pas inventer un chiffre précis."
+  },
+  {
+    "id": "agrege-08",
+    "category": "questions_agregees",
+    "question": "Y a-t-il plus de champions Mage ou plus de champions Fighter dans les archives ?",
+    "expected": "Même limite que agrege-06/07 : question comparative agrégée sur les tags, non couverte par les chunks d'index existants."
+  },
+  {
+    "id": "horslore-01",
+    "category": "hors_lore",
+    "question": "Quel est le meilleur build actuel pour Yasuo ?",
+    "expected": "Doit refuser : question de gameplay/meta, hors du scope du lore."
+  },
+  {
+    "id": "horslore-02",
+    "category": "hors_lore",
+    "question": "Quelle est la date de sortie de League of Legends ?",
+    "expected": "Doit refuser : information sur le jeu/l'entreprise, pas sur le lore de Runeterra."
+  },
+  {
+    "id": "horslore-03",
+    "category": "hors_lore",
+    "question": "Quel patch a récemment nerfé Jinx ?",
+    "expected": "Doit refuser : actualité de patch, hors scope et hors des sources ingérées."
+  },
+  {
+    "id": "horslore-04",
+    "category": "hors_lore",
+    "question": "Combien de points d'influence coûte Aphelios ?",
+    "expected": "Doit refuser : information de gameplay/économie du jeu, pas de lore."
+  },
+  {
+    "id": "horslore-05",
+    "category": "hors_lore",
+    "question": "Qui a remporté les derniers Worlds ?",
+    "expected": "Doit refuser : esport, hors scope lore et hors des sources ingérées."
+  },
+  {
+    "id": "horslore-06",
+    "category": "hors_lore",
+    "question": "Quel est le tier list actuel des junglers ?",
+    "expected": "Doit refuser : gameplay/méta compétitive, hors scope lore."
+  },
+  {
+    "id": "horslore-07",
+    "category": "hors_lore",
+    "question": "Comment contacter le support technique de Riot Games ?",
+    "expected": "Doit refuser : question de support produit, sans rapport avec le lore."
+  },
+  {
+    "id": "horslore-08",
+    "category": "hors_lore",
+    "question": "Quelle est la recette de cuisine préférée de Garen ?",
+    "expected": "Doit refuser plutôt qu'inventer une réponse fantaisiste : aucune source ne documente cela, le prompt système interdit d'inventer."
+  },
+  {
+    "id": "horslore-09",
+    "category": "hors_lore",
+    "question": "Quel acteur double Draven en version anglaise ?",
+    "expected": "Doit refuser : information de production (voice acting), pas de lore narratif."
+  }
+]

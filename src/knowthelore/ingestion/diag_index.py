@@ -24,7 +24,7 @@ from dotenv import load_dotenv
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from knowthelore.embeddings.embedder import embed_text
 
-_env_loaded = load_dotenv()
+dotenv_loaded = load_dotenv()
 DATABASE_URL = os.getenv("DATABASE_URL")
 if not DATABASE_URL:
     raise RuntimeError("DATABASE_URL n'est pas défini (vérifie ton .env)")
@@ -54,7 +54,7 @@ ORDER BY sim DESC;
 
 
 def main() -> None:
-    print("_env trouvé   :", bool(_env_loaded))
+    print(".env trouvé   :", bool(dotenv_loaded))
     print("DATABASE_URL  :", re.sub(r"://([^:/@]+):[^@]*@", r"://\1:***@", DATABASE_URL))
     conn = psycopg.connect(DATABASE_URL)
     try:

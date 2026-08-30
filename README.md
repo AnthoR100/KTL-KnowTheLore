@@ -2,15 +2,14 @@
 
 Chatbot RAG local spécialisé dans le lore de League of Legends / Runeterra. Le bot ("Le Conteur Légendaire") répond aux questions des fans en s'appuyant exclusivement sur des sources officielles et communautaires vérifiées (Riot Universe, Data Dragon, transcriptions YouTube), avec citations systématiques.
 
-Voir [cdc.md](cdc.md) pour le cahier des charges technique complet (architecture, pipeline RAG, planning, prompts système).
+Voir `docs/ARCHITECTURE.md` pour le détail de l'architecture et du pipeline RAG (note : `docs/` est un dossier de notes perso, non versionné — disponible en local uniquement).
 
 ## Stack
 
 - **Backend** : Python 3.12+ / Poetry, FastAPI, SQLAlchemy
-- **Base de données** : PostgreSQL + pgvector (embeddings vectoriels)
+- **Base de données** : PostgreSQL + pgvector (embeddings vectoriels, 1024 dimensions)
 - **Frontend** : React + Vite
-- **LLM local** : Ollama (Llama 3.1 8B / Mistral 7B)
-- **Embeddings** : sentence-transformers
+- **LLM local** : Ollama (`llama3.1:8b` pour la génération, `bge-m3` pour les embeddings)
 
 ## Structure du projet
 
@@ -27,9 +26,10 @@ data/raw/          Données scrapées brutes (JSON)
 
 ```bash
 poetry install
+cp .env.example .env  # puis renseigner DATABASE_URL et les autres variables
 ```
 
-Prérequis : PostgreSQL 15+ avec l'extension `pgvector`, et Ollama avec un modèle téléchargé (voir [cdc.md](cdc.md) pour les détails d'installation et de configuration).
+Prérequis : PostgreSQL avec l'extension `pgvector`, et Ollama avec les modèles `llama3.1:8b` et `bge-m3` téléchargés.
 
 ## Conformité
 
