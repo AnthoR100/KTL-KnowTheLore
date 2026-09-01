@@ -99,7 +99,7 @@ def chunk_text(
 
 if __name__ == "__main__":
     import sys
-    from parser import parse_universe_champion
+    from knowthelore.ingestion.parser import parse_universe_champion
 
     path = sys.argv[1] if len(sys.argv) > 1 else "data/raw/universe_champions/ahri.json"
     doc = parse_universe_champion(path)

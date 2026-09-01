@@ -37,10 +37,9 @@ Prérequis : PostgreSQL avec l'extension `pgvector`, et Ollama avec les modèles
 ## Lancer le projet
 
 ```bash
-# Ingestion complète (corpus champions + régions + index agrégé)
-poetry run python -m knowthelore.ingestion.ingest_full
-
-# Reconstruire l'index agrégé seul, après une modification du corpus
+# Ingestion complète (dans cet ordre : régions, puis champions, puis index agrégé)
+poetry run python -m knowthelore.ingestion.ingest_all_regions
+poetry run python -m knowthelore.ingestion.ingest_all
 poetry run python -m knowthelore.ingestion.build_index_chunk --write
 
 # API
